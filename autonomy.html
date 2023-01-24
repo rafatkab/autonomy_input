@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="autonomy.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="gnss_input">
+            <h1 id="title">Autonomy Input</h1>
+            <input type="text" id="input-gnss" name="input-gnss" height="10" width="5">
+            <span id="dropdown">
+                <button id="dropdown-menu" onclick='dropdown()'><span id="dropdown-text">Select post/gate</span><span class="caret"></span></button>
+                <button id="post_button" onclick="post()">Post</button>
+                <button id="gate_button" onclick="gate()">Gate</button>
+            </span>
+        </div>
+
+        <div id="coord"><h1>GNSS Coordinates</h1><br><div id="gnss-text"></div></div>
+        <script src="autonomy.js"></script>
+    </body>
+</html>
